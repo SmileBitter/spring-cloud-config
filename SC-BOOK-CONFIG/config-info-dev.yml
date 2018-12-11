@@ -1,4 +1,5 @@
-cn：
-  springcloud：
-    book：
-      config：I am the git configuration file from dev environment.
+server:
+  port: 9095
+spring:
+  application:
+    name: ch11-1-config-client
