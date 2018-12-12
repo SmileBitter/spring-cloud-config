@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: ch11-1-config-client
+  rabbitmq:     # 现在将集成RabbitMQ作为消息服务总线处理
+    host: 106.12.213.251   # RabbitMQ主机服务地址
+    port: 5672    # RabbitMQ的监听端口
+    username: yangmi  # 用户名
+    password: ym # 密码
 # 包含所有端点的信息，默认情况下，只是打开了info、health的端点
 management:
   endpoints:
