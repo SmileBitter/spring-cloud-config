@@ -1,5 +1,5 @@
 server:
-  port: 9095
+  port: 9000
 spring:
   application:
     name: ch11-1-config-client
