@@ -1,5 +1,13 @@
 server:
-  port: 9095
+  port: 9091
 spring:
   application:
     name: ch11-1-config-client
+# 包含所有端点的信息，默认情况下，只是打开了info、health的端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include:  "*"
+    health:
+      show-details: always
